@@ -1,0 +1,94 @@
+:root {
+    --the-dialogue-sender: #f0f0f0;
+    --the-dialogue-responder: #d7ecff;
+}
+[data-bs-theme=dark] {
+    --the-dialogue-sender: #414750;
+    --the-dialogue-responder: #0f65a9;
+}
+
+
+.the-dialogue header {
+    padding-bottom: 6px;
+}
+
+.the-dialogue .sender,
+.the-dialogue .responder {
+    position: relative;
+    background-color: var(--the-dialogue-sender);
+    margin: 30px 56px 40px;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.the-dialogue div.sender,
+.the-dialogue div.responder {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+}
+
+.the-dialogue div.sender > p,
+.the-dialogue div.responder > p {
+    background-color: var(--the-dialogue-sender);
+    margin-bottom: 0;
+    padding: 8px 12px;
+    word-break: break-all;
+    border-radius: 6px;
+    max-width: 86%;
+}
+
+.the-dialogue .sender::before,
+.the-dialogue .responder::before {
+    content: attr(title);
+    position: absolute;
+    top: -28px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.the-dialogue .sender::after,
+.the-dialogue .responder::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0px;
+}
+
+.the-dialogue .sender::before {
+    left: -50px;
+}
+
+.the-dialogue .sender::after {
+    background: url(/blog/img/xinzhizhu.jpg) no-repeat center/100%;
+    left: -50px;
+}
+
+.the-dialogue .responder {
+    background-color: var(--the-dialogue-responder);
+    text-align: right;
+}
+
+.the-dialogue div.responder {
+    background-color: transparent;
+    text-align: left;
+    justify-content: end;
+}
+.the-dialogue div.responder > p {
+    background-color: var(--the-dialogue-responder);
+}
+
+.the-dialogue .responder::before {
+    right: -50px;
+}
+
+.the-dialogue .responder::after {
+    background: url(/blog/img/fengjian.jpg) no-repeat center/100%;
+    right: -52px;
+}

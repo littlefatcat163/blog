@@ -1,0 +1,1 @@
+!1 in window||new Viewer(document.getElementById("board"),{backdrop:!0,button:!0,focus:!0,fullscreen:!0,loading:!0,loop:!0,keyboard:!0,moveable:!0,navbar:!1,rotatable:!0,scalable:!0,slideOnTouch:!0,title:!0,toggleOnDblclick:!0,toolbar:!0,tooltip:!0,transition:!0,zoomable:!0,zoomOnTouch:!0,zoomOnWheel:!0});

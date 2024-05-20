@@ -1,0 +1,1 @@
+let theme=document.documentElement.getAttribute("data-bs-theme");"dark"!==theme&&(theme="forest"),mermaid.initialize({theme:theme,startOnLoad:!0}),mermaid.init();

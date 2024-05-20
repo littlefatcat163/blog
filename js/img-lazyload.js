@@ -1,0 +1,1 @@
+!function(t,e){for(const t of e.querySelectorAll("img[lazyload]"))LNote.utils.waitElementVisible(t,(function(){t.removeAttribute("srcset"),t.removeAttribute("lazyload")}),2)}(window,document);
